@@ -1,19 +1,25 @@
-<h1><%= @outcome %></h1>
+<div class="play">
+  <h1 class="outcome"><%= @outcome %></h1>
 
-<%= @true_value_first %>
+  <div class ="field">
+    <div  class="player">
+      <h2>Your Card</h2>
+      <img src= <%= @img_first %> >
+    </div>
 
-<div>
-  <img src= <%= @img_first %> >
+    <div>
+      <img src="/images/vs.png" alt="Versus" class="versus">
+    </div>
+
+    <div  class="player">
+      <h2>Computer's Card</h2>
+      <img src= <%= @img_second %> >
+    </div>
+  </div>
+
+  <form action="/play">
+    <button>Play Again</button>
+  </form>
+
+  <h3>There are <%=@remaining_first%> cards remaining in the decks</h3>
 </div>
-
-<%= @true_value_second %>
-
-<div>
-  <img src= <%= @img_second %> >
-</div>
-
-<form action="/play">
-  <button>Play Again</button>
-</form>
-
-<h3>There are <%=@remaining_first%> cards remaining in the decks</h3>

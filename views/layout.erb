@@ -5,17 +5,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #fef6e4;
+      }
+
+      .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       .nav a {
         text-decoration: none;
-        color: green;
+        color: #001858;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f582ae;
       }
 
       .nav {
         text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Arial, Tahoma;
       }
 
-      .welcome {
-        color: purple;
+      .text {
+        color: #001858;
+        font-family: Arial, Verdana, Tahoma;
       }
 
       .wiki a {
@@ -23,14 +44,59 @@
         color: blue;
       }
 
+      .play {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .outcome {
+        color: #001858;
+      }
+
+      .field {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #001858;
+      }
+
+      .shuffle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #001858;
+        font-family: Arial, Verdana, Tahoma;
+      }
+
       .cards {
-        width: 256px;
-        height: 128px;
+        width: 512px;
+        height: 256px;
+        object-fit: cover;
+        border-radius: 48px;
       }
 
       .aces {
         width: 128px;
         height: 128px;
+        border-radius: 24px;
+      }
+
+      .versus {
+        width: 172px;
+        height: 128px;
+        object-fit: cover;
+      }
+
+      .rifle {
+        border-radius: 24px;
       }
 
       
@@ -38,22 +104,24 @@
   </head>
 
   <body>
-    <div class="nav">
-      <a href="/">
-        Home
-      </a>
-    </div>
+    <div class="navbar">
+      <div class="nav">
+        <a href="/">
+          Home
+        </a>
+      </div>
 
-    <div class="nav">
-      <a href="/play">
-        Play
-      </a>
-    </div>
+      <div class="nav">
+        <a href="/play">
+          Play
+        </a>
+      </div>
 
-    <div class="nav">
-      <a href="/shuffle">
-        Shuffle
-      </a>
+      <div class="nav">
+        <a href="/shuffle">
+          Shuffle
+        </a>
+      </div>
     </div>
 
     <%= yield %>
