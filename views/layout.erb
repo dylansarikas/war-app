@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra Template</title>
+    <title>War App</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      .nav a {
+        text-decoration: none;
+        color: green;
+      }
+
+      .nav {
+        text-align: center;
+      }
+
+      .welcome {
+        color: purple;
+      }
+
+      .wiki a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      .cards {
+        width: 256px;
+        height: 128px;
+      }
+
+      .aces {
+        width: 128px;
+        height: 128px;
+      }
+
+      
+    </style>
   </head>
 
   <body>
-    <div>
+    <div class="nav">
       <a href="/">
         Home
       </a>
     </div>
 
-    <div>
+    <div class="nav">
       <a href="/play">
         Play
       </a>
     </div>
 
-    <div>
+    <div class="nav">
       <a href="/shuffle">
         Shuffle
       </a>
