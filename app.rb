@@ -73,3 +73,12 @@ get("/play") do
   
   erb(:play)
 end
+
+get("/shuffle") do
+  @shuffle_first = "https://deckofcardsapi.com/api/deck/asf3s3wnp8cl/shuffle/"
+  @shuffle_second = "https://deckofcardsapi.com/api/deck/z3nflaai4q7w/shuffle/"
+  @first_response = HTTP.get(@shuffle_first)
+  @second_response = HTTP.get(@shuffle_second)
+
+  erb(:shuffle)
+end

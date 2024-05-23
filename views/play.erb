@@ -1,7 +1,3 @@
-<h1>hi</h1>
-
-<%= @card_first_data %>
-
 <h1><%= @outcome %></h1>
 
 <%= @true_value_first %>
@@ -16,14 +12,8 @@
   <img src= <%= @img_second %> >
 </div>
 
-<p>Play Again</p>
-
-<h3>There are <%=@remaining_first%> cards remaining in the decks</h3>
-
-<!--<form action="https://deckofcardsapi.com/api/deck/asf3s3wnp8cl/shuffle/">
-  <button>Shuffle Your Deck</button>
+<form action="/play">
+  <button>Play Again</button>
 </form>
 
-<form action="https://deckofcardsapi.com/api/deck/z3nflaai4q7w/shuffle/">
-  <button>Shuffle The Computer's Deck</button>
-</form>-->
+<h3>There are <%=@remaining_first%> cards remaining in the decks</h3>
