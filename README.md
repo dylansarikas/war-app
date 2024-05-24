@@ -7,3 +7,5 @@ Read the directions on the home page
 Click play to start playing
 
 Remember to shuffle the decks if you run out of cards
+
+Type "bin/server" at the command line to run a local instance on your computer
